@@ -1,0 +1,146 @@
+.header {
+    padding-top: 30px;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        fill: $primary;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__menu-item {
+        @include font-size(14);
+
+        a {
+            color: rgba($white, .7);
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            transition: color .3s ease;
+
+            &:hover {
+                color: $white;
+            }
+        }
+
+        &--active a {
+            color: $white;
+            font-weight: bold;
+        }
+    }
+
+    &__search {
+        position: relative;
+        @include font-size(20);
+        z-index: 1;
+
+        &:hover {
+            .header__search-input {
+                opacity: 1;
+                visibility: visible;
+                width: 220px;
+            }
+        }
+    }
+
+    &__search-input {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        width: 0;
+        background-color: $dark;
+        border: 1px solid $white;
+        border-radius: 4px;
+        padding: 10px 40px 10px 10px;
+        color: $white;
+        @include font-size(14);
+        transition: all .3s ease;
+
+        &:focus {
+            box-shadow: 0 0 15px rgba($white, .3);
+            opacity: 1;
+            visibility: visible;
+            width: 220px;
+        }
+    }
+
+    &__profile {
+        position: relative;
+        margin-left: 30px;
+    }
+
+    &__avatar {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+
+        img {
+            margin-right: 10px;
+        }
+
+        i {
+            @include font-size(18);
+        }
+    }
+
+    &__dropdown {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background: $dark;
+        border: 1px solid $white;
+        border-radius: 4px;
+        padding: 20px;
+        min-width: 170px;
+        opacity: 0;
+        height: 0;
+        visibility: hidden;
+        transition: all .3s ease;
+
+        li {
+            @include font-size(14);
+            &:nth-child(1) {
+                margin-bottom: 20px;
+            }
+        }
+
+        a {
+            color: $white;
+            text-decoration: none;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__profile:hover {
+        .header__dropdown {
+            opacity: 1;
+            visibility: visible;
+            height: 90px;
+        }
+    }
+
+}

@@ -1,0 +1,14 @@
+{
+  "name": "imagiflix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "./node_modules/.bin/sass assets/scss/index.scss assets/css/style.css --watch"
+  },
+  "author": "Guilherme Almeida",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.17.3"
+  }
+}

@@ -1,0 +1,56 @@
+.rating {
+    display: flex;
+    align-items: center;
+    @include font-size(18);
+
+    &__label {
+        margin-right: 10px;
+    }
+
+    &__score {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $dark;
+        border: 3px solid $green;
+        border-radius: 50%;
+        height: 44px;
+        width: 44px;
+    }
+}
+
+.loading {
+    position: fixed;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba($dark, 0.8);
+
+    &::before {
+        content: "";
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -50px;
+        margin-left: -50px;
+        display: block;
+        border: 5px solid $primary;
+        border-left: 0;
+        border-bottom: 0;
+        border-radius: 50%;
+        animation: spinner 1s linear infinite;
+    }
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

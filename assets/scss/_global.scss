@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $dark;
+    color: $white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input,
+textarea,
+button {
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+.blur {
+    filter: blur(5px);
+    transition: all .3s ease;
+}

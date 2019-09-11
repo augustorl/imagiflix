@@ -1,0 +1,23 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    border: 0;
+    background-color: rgba($dark, .5);
+    color: $white;
+    border-radius: 4px;
+    padding: 8px 20px;
+    @include font-size(16);
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &:hover {
+        background-color: $white;
+        color: $dark;
+    }
+
+    i {
+    @include font-size(12);
+    margin-right: 10px; 
+    }
+}
+

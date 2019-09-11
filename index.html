@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Imagiflix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+<body>
+    <div class="loading" id="loading"></div>
+    <div id="wrap">
+        <header class="header">
+            <div class="container">
+                <nav class="header__navigation">
+                    <div class="header__logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="176" height="40" viewBox="0 0 176 40">
+                            <path id="imagiflix" class="cls-1" d="M62,68q3.13-.417,6.26-0.809c0.005-12.79.01-25.574,0.011-38.737H62V68h0ZM82.869,28.448H74.148c0,13.146-.01,25.581-0.02,38.026q2.732-.321,5.464-0.62c0.009-8.588.019-17.169,0.024-26.1,1.553,8.917,3.1,17.353,4.643,25.6q2.96-.306,5.92-0.588c1.457-8.475,2.916-16.763,4.368-25.576C94.54,48,94.523,56.177,94.507,64.37q2.961-.264,5.921-0.5c0.026-11.182.053-22.336,0.054-35.421H91.761c-1.426,9.3-2.862,17.833-4.3,26.337-1.525-8.32-3.056-17.013-4.594-26.337h0Zm37.8,0H111.49C109.36,41.5,107.2,52.33,105.047,63.511q2.876-.212,5.752-0.4c0.366-1.986.733-3.964,1.1-5.949q3.846-.181,7.691-0.33c0.355,1.916.709,3.813,1.064,5.706q3.16-.16,6.323-0.29c-2.09-10.3-4.183-20.736-6.309-33.8h0Zm-4.906,6.726c1,6.207,2,11.884,2.986,17.325q-3.02.089-6.039,0.194C113.729,47.105,114.748,41.383,115.761,35.172Zm24.784,13.8,2.85-.022c-0.006,1.962-.013,3.883-0.02,5.783-0.008,2.206-1.265,3-3.259,3.036s-3.246-.726-3.238-2.947c0.02-5.6.038-11.382,0.047-17.8,0-2.554,1.258-3.589,3.253-3.583s3.248,1.024,3.245,3.572q0,1.905-.007,3.738,2.964-.008,5.928-0.01,0-1.66.006-3.378c0.009-5.674-3.185-9.391-9.341-9.367-6.156-.022-9.347,3.686-9.355,9.4-0.008,6.179-.025,11.795-0.043,17.24-0.017,5.026,3.163,7.691,9.317,7.557s9.358-2.882,9.376-7.811c0.012-3.265.023-6.6,0.032-10.091q-4.389.007-8.778,0.03c0,1.58-.008,3.127-0.013,4.65h0Zm10.894,12.739q3.135-.007,6.27.018c0.04-10.148.08-20.252,0.082-33.286h-6.27c0,13.034-.042,23.13-0.082,33.269h0ZM170,33.87q5.158,0.005,10.317.014,0-2.646,0-5.438H163.729c0,13.037-.042,23.178-0.081,33.363q3.135,0.056,6.272.145c0.016-4.234.032-8.46,0.045-12.882q4.047,0.05,8.1.123c0-1.547.008-3.115,0.012-4.714q-4.049-.046-8.095-0.076C169.986,41.06,169.992,37.575,170,33.87ZM184,62.523q8.3,0.436,16.6,1.115,0.006-2.372.012-4.749-5.163-.336-10.325-0.6c0.027-9.211.052-18.651,0.053-29.847h-6.27c0,13.053-.037,23.546-0.071,34.076h0Zm20.365,1.437q3.138,0.279,6.278.593c0.021-11.514.043-23,.044-36.105h-6.27C204.42,41.534,204.394,52.733,204.369,63.96Zm27.365-35.51c-1.615,4.852-3.231,9.632-4.849,14.272-1.575-4.723-3.15-9.433-4.727-14.272h-6.5c2.185,6.367,4.365,12.432,6.546,18.536-2.343,6.288-4.691,12.26-7.041,18.041q2.94,0.319,5.88.671c1.738-4.567,3.474-9.25,5.208-14.095,1.707,5.043,3.416,10.16,5.127,15.431Q234.692,67.492,238,68c-2.341-7.139-4.679-13.972-7.015-20.655,2.189-6.123,4.374-12.484,6.559-18.89h-5.814Z" transform="translate(-62 -28)"/>
+                        </svg>
+                    </div>
+            
+                    <ul class="header__menu">
+                        <li class="header__menu-item header__menu-item--active"><a href="#">Inicio</a></li>
+                        <li class="header__menu-item"><a href="#movies-slider">Filmes</a></li>
+                        <li class="header__menu-item"><a href="#series-slider">Séries</a></li>
+                    </ul>
+
+                </nav>
+                
+                <div class="header__navigation">
+                    <div class="header__search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" class="header__search-input" placeholder="Títulos, gente e gêneros">
+                    </div>
+
+                    <div class="header__profile">
+                        <div class="header__avatar">
+                            <img src="assets/images/avatar.jpg">
+                            <i class="fas fa-sort-down"></i>
+                        </div>
+
+                        <ul class="header__dropdown">
+                            <li><a href="#">Minha conta</a></li>
+                            <li><a href="#">Sair</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="backdrop" id="backdrop"></div>
+        
+        <section class="featured">
+            <div class="container">
+                <div class="featured__content">
+                    <h2>Assista agora:</h2>
+                    <h1 id="featured-title"></h1>
+        
+                    <div class="rating">
+                        <span class="rating__label">Nota</span>
+                        <div class="rating__score" id="featured-vote"></div>
+                    </div>
+                    <div class="featured__actions">
+                        <button class="btn" id="play-featured" ><i class="fas fa-play"></i>Assistir</button>
+                        <button class="btn"><i class="fas fa-plus"></i>Minha Lista</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main class="main">
+            <section class="movies-list">
+                <div class="container">
+                    <h2 class="movies-list__title">Filmes populares na Imagiflix</h2>
+                </div>
+                <div class="movies-list__slider" id="movies-slider"></div>
+
+
+                <div class="container">
+                    <h2 class="movies-list__title">Séries populares na Imagiflix</h2>
+                </div>
+                <div class="movies-list__slider" id="series-slider"></div>
+
+                <div class="container">
+                    <h2 class="movies-list__title">Para sua família</h2>
+                </div>
+                <div class="movies-list__slider" id="family-slider"></div>
+                    
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <ul class="footer__social">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>  
+            </ul>
+
+            <div class="footer__tmdb">
+                <a href="https://www.themoviedb.org">
+                    <img src="assets/images/tmdb.png" alt="The movie database">
+                </a>
+                <p class="footer__credits">"This product uses the TMDb API but is not endorsed or certified by TMDb."</p>
+            </div>
+
+            <div class="footer__menus">
+                <ul class="footer__menu">
+                    <li><a href="#">Idioma e legendas</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Entre em contato</a></li>
+                </ul>
+
+                <ul class="footer__menu">
+                    <li><a href="#">Audiodescrição</a></li>
+                    <li><a href="#">Relação com investidores</a></li>
+                    <li><a href="#">Avisos legais</a></li>
+                </ul>
+
+                <ul class="footer__menu">
+                    <li><a href="#">Centro de ajuda</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                    <li><a href="#">Preferências de Cookies</a></li>
+                </ul>
+
+                <ul class="footer__menu">
+                    <li><a href="#">Preferências de Cookies</a></li>
+                    <li><a href="#">Termos de uso</a></li>
+                    <li><a href="#">Informações corporativas</a></li>
+                </ul>
+            </div>
+
+            <p class="footer__credits">© 2019 Imagiflix, Inc.</p>
+
+        </footer>
+    </div>    
+
+    <div class="modal" id="modal">
+        <i class="far fa-times-circle modal__close" id="close-modal"></i>
+        <div class="container">
+            <div class="modal__poster">
+                <img src="" alt="">
+
+                <div class="modal__play">
+                    <i class="far fa-play-circle"></i>
+                </div>
+            </div>
+
+            <div class="modal__description">
+                <h2></h2>
+                <h4></h4>
+
+                <p></p>
+
+                <div class="modal__info">
+                    <div class="rating">
+                        <span class="rating__label"></span>
+                        <div class="rating__score"></div>
+                    </div>
+
+                    <div class="modal__runtime">
+                        <i></i> <span></span>
+                    </div>
+                </div>
+
+                <a href="#" target="_blank"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="player" id="player">
+        <i class="far fa-times-circle player__close" id="close-player"></i>
+
+        <div class="player-content"></div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>

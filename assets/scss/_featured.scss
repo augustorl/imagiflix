@@ -1,0 +1,43 @@
+.featured {
+    display: flex;
+    align-items: center;
+    height: 670px;
+    padding-top: 100px;
+    
+    &__content {
+        width: 60%;
+
+        @media (max-width: 1200px) {
+            .featured__content {
+                width: 70%
+            }
+        }
+
+        @media (max-width: 768px) {
+            .featured__content {
+                width: 100%;
+            }
+        }
+    }
+
+    h2 {
+        font-weight: 300;
+        @include font-size(30);
+    }
+
+    h1 {
+        font-weight: 700;
+        @include font-size(70);
+        margin: 15px 0;
+        
+        @media (max-width: 992px) {
+            h1 {
+                @include font-size(50);
+            }
+        }
+    }
+
+    &__actions {
+        margin-top: 20px;
+    }
+}

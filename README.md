@@ -1,6 +1,6 @@
 # _**Imagiflix**_
 
-> Imagiflix is a fictional site inspired by Netflix, created with HTML, CSS, Javascript and AJAX among other technologies.
+> 🎥Imagiflix is a fictional site inspired by Netflix.
 
 ## **_Prerequisites_**
 
@@ -24,7 +24,7 @@ Used [npm](https://www.npmjs.com/) to install dependencies.
 
 # _**Imagiflix**_
 
-> Imagiflix é um site fictício inspirado no Netflix, criado com HTML, CSS, JS, SASS, AJAX entre outras tecnologias.
+> 🎥Imagiflix é um site fictício inspirado no Netflix.
 
 ## **_Pré requisitos_**
 

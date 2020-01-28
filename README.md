@@ -13,7 +13,7 @@
 
 ![alt text][Screenshot 3]
 
-[Screenshot 1]: https://github.com/augustorl/imagiflix/blob/master/assets/images/imagiflix3.png "Screenshot 3"
+[Screenshot 3]: https://github.com/augustorl/imagiflix/blob/master/assets/images/imagiflix3.png "Screenshot 3"
 
 
 

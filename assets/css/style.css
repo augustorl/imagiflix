@@ -106,6 +106,9 @@ button {
   .header__menu {
     display: none;
   }
+  .footer {
+     display: none;
+  }
 }
 .header__menu-item {
   font-size: 0.875rem;
@@ -618,6 +621,11 @@ button {
   align-items: center;
   justify-content: center;
 }
+
+athletic_shoeSimple shoe store built with Redux and Redux-Saga
+
+JavaScript
+
 .player .player-content h3 {
   font-size: 24px;
 }

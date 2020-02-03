@@ -1,6 +1,6 @@
 # _**Imagiflix**_
 
-> 🎥 Imagiflix is a fictional site inspired by Netflix.
+> 🎥 Imagiflix is a fictional website inspired by Netflix.
 
 ## **_[Live Demo](https://imagiflix-deploy1921.netlify.com/)_**
 ![alt text][Screenshot 1]
